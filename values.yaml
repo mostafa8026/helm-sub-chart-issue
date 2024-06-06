@@ -1,0 +1,3 @@
+redis:
+  fullnameOverride: "custom-redis-name"
+  password: "custompassword"
