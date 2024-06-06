@@ -19,8 +19,8 @@ spec:
             - containerPort: 80
           env:
             - name: REDIS_HOST
-              value: "{{ .Values.redis.fullnameOverride }}"
+              value: "{{ .Values.master.redis.fullnameOverride }}"
             - name: REDIS_PORT
-              value: "{{ .Values.redis.master.service.port }}"
+              value: "{{ .Values.master.redis.master.service.port }}"
             - name: REDIS_PASSWORD
-              value: "{{ .Values.redis.password }}"
+              value: "{{ .Values.master.redis.password }}"

@@ -1,3 +1,4 @@
-redis:
-  fullnameOverride: "custom-redis-name"
-  password: "custompassword"
+master:
+  redis:
+    fullnameOverride: "custom-redis-name"
+    password: "custompassword"
